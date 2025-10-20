@@ -1,0 +1,278 @@
+/* Universal Styles */
+
+body {
+    box-sizing: border-box;
+    max-width: 87.5rem;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #d5b98f;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+section {
+    border-top: 2px solid black;
+    margin-bottom: 4.4em;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Lilita One", sans-serif;
+}
+
+h1 {
+    font-size: 2.2em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 3.125em;
+}
+
+h3 {
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 1.25em;
+    margin: 1em 0;
+}
+
+.text, .project-description {
+    font-family: "Playpen Sans", sans-serif;
+    font-size: 1.25em;
+}
+
+@media only screen and (max-width: 430px) {
+    .text {
+        font-size: 0.75em;
+    }
+}
+
+/* Header, Navigation */
+
+.navigation-container {
+    align-items: center;
+}
+
+.navigation {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin-left: 1.6em;
+}
+
+a {
+    font-family: "Poetsen One", sans-serif;
+    color: black;
+    font-size: 1.6em;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1024px) {
+    .navigation {
+        padding-left: 0px;
+    }
+    #name {
+        margin: 0px;
+    }
+}
+
+@media only screen and  (max-width: 820px) {
+    a {
+        font-size: 1.3em;
+    }
+}
+
+/* About Me */
+
+.text {
+    background-color: #c2a482;
+    padding: 1.25em;
+    box-shadow: 1em 1em #735f5f;
+}
+
+/* Programming Projects */
+
+.picture-container {
+    width: 40.625em;
+    height: 19.1875em;
+    overflow: hidden;
+    border: 10px solid #c2a482;
+}
+
+.project-picture {
+    width: 40.625em;
+    height: auto;
+}
+
+.project-description {
+    background-color: #c2a482;
+    margin: 0px;
+    border: 10px solid #c2a482;
+}
+
+@media only screen and  (max-width: 1024px) {
+    .picture-container {
+        width: 60em;
+        height: 28em;
+    }
+    .project-picture {
+        width: 60em;
+    }
+}
+
+@media only screen and  (max-width: 820px) {
+    .picture-container {
+        width: 45em;
+        height: 22em;
+    }
+    .project-picture {
+        width: 45em;
+    }
+}
+
+/* Audio Projects */
+
+.slideshow-container {
+    max-width: 87.5rem;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+  }
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -2.1em;
+    padding: 1em;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-radius: 0 3px 3px 0;
+    background-color: #c2a482;
+    user-select: none;
+  }
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+.prev:hover, .next:hover {
+    background-color: rgba(143, 115, 83, 0.9);
+  }
+
+.audio-project {
+    width: 22.5em;
+    text-align: center;
+    margin-top: 1.25em;
+    border: 5px solid #c2a482;
+    padding-top: 1.6em;
+}
+
+.movie-poster {
+    width: 12.5em;
+    height: auto;
+}
+
+.film-title {
+    font-family: "Poetsen One", sans-serif;
+}
+
+.film-description {
+    line-height: 1.875em;
+    background-color: #c2a482;
+    margin-bottom: 0px;
+}
+
+@media only screen and  (max-width: 1024px) {
+    .audio-project {
+        width: 18em;
+    }
+    .prev, .next {
+        font-size: 1em;
+        margin-top: -2.5em;
+    }
+}
+
+@media only screen and  (max-width: 820px) {
+    .audio-project {
+        width: 15em;
+    }
+    .prev, .next {
+        font-size: 1em;
+        padding: 0.5em;
+    }
+}
+
+/* Skills */
+
+.skillset-container {
+    background-color: #c2a482;
+    padding: 0px 0px 0.625em 0.625em;
+    box-shadow: 0.625em 0.625em #735f5f;
+}
+
+.skill-icon {
+    height: 3.125em;
+    width: auto;
+    margin-right: 2.5em;
+}
+
+.audio-skill-icon {
+    height: 2.8em;
+    width: auto;
+    margin-right: 2.5em;
+}
+
+@media only screen and  (max-width: 1024px) {
+    .skill-container {
+        justify-content: space-around;
+    }
+    .skillset-container {
+        width: 400px;
+    }
+    .icon-container {
+        justify-content: space-around;
+    }
+    .skill-icon, .audio-skill-icon {
+        margin-bottom: 1em;
+    }
+}
+@media only screen and  (max-width: 820px) {
+    .skillset-container {
+        width: 800px;
+        margin-bottom: 2em;
+    }
+}
+
+/* Footer */
+
+.contact-container {
+   align-items: flex-end;
+   border-top: 2px solid black;
+   border-bottom: 2px solid black;
+   padding-bottom: 0.625em;
+}
+
+.contact-icon {
+    margin-right: 1.25em;
+}
