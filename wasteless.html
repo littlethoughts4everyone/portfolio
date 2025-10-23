@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Playpen+Sans:wght@100..800&family=Poetsen+One&display=swap" rel="stylesheet">
+        <script src="script.js" async></script>
+        <title>Manuel Weiher - Portfolio</title>
+    </head>
+
+  <body>
+      <header>
+        <nav class="navigation-container flex">
+          <h2 id="name">Manuel Weiher</h2>
+            <ul class="navigation">
+              <li><a href="./index.html#about-me">About Me</a></li>
+              <li><a href="./index.html#programming-projects">Programming Projects</a></li>
+              <li><a href="./index.html#audio-projects">Audio Projects</a></li>
+              <li><a href="./index.html#skills">Skills</a></li>
+              <li><a href="./index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+     <main>
+        <section id="wasteless-description>">
+          <h1>Wasteless Web-App</h1>
+          <h3>Description</h3>
+          <p class="text">
+              The purpose of the Wasteless-App is to manage groceries and quickly find a matching recipe without wasting food. Search or click through saved 
+              recipes to find one, which has the most ingredients in common with your grocery list. 
+              
+              The main functionality of the app is, that items in the grocery list are compared with ingredients of added recipes. On the recipe card, green symbols indicate
+              that an ingredient is in the grocery list and orange symbols indicate that an ingredient is in the grocery list, but with a lesser amount. So you easily know what's
+              left to buy.
+
+              On the grocery site you can add food items to different food categories. Most food items are saved in a datalist, which quickens the adding process. As a design feature 
+              the food items are rendered with a small matching icon. Each item, that is added with an amount, has an input and button to change the amount of that items instantly.
+
+              The recipe form allows to add recipes with as many ingredients as needed. The recipes are added to predefined categories. You also specify a source for the recipe (for example
+              a cookbook or a website link), so that you know where to find it.
+
+              When clicking on a recipe category, all added recipes for that category are shown in a sorted order. The recipe with the most ingredients available in the grocerieslist is
+              shown at the top. The order changes when matching food items are added or deleted in the groceries list.
+              <br><br>
+              Languages used:
+              <br><br>
+              React/Redux, Javascript, CSS, HTML
+          </p>
+        </section>
+        <section id="wasteless-images">
+          <h3>Images</h3>
+            <div class="project-images flex">
+              <img src="./images/WastelessSite.jpg" class="website-image" alt="website-example-picture"/>
+              <img src="./images/WastelessSite_02.jpg" class="website-image" alt="website-example-picture"/>
+              <img src="./images/WastelessSite_03.jpg" class="website-image" alt="website-example-picture"/>
+              <img src="./images/WastelessSite_04.jpg" class="website-image" alt="website-example-picture"/>
+              <img src="./images/WastelessSite_05.jpg" class="website-image" alt="website-example-picture"/>
+            </div>
+          </section>
+        <section id="wasteless-video">
+          <h3>Video</h3>
+            <video controls class="website-video">
+              <source src="./videos/WastelessSiteVideo.mp4" type="video/mp4" />
+            </video>
+        </section>
+    </main>
+
+    <footer id="contact">
+      <div class="contact-container flex">
+        <p id="copyright">&copy; 2024 Manuel Weiher</p>
+        <div class="contact-information">
+          <h4>Contact:</h4>
+          <div class="contact-icon-container">
+            <a href="https://www.linkedin.com/in/manuel-weiher-2883b815a/"
+              ><img src="./images/linked-in-icon.png" class="contact-icon"
+            /></a>
+            <a href="https://github.com/littlethoughts4everyone"
+              ><img src="./images/github-icon.png" class="contact-icon"
+            /></a>
+            <a href="mailto:weiher.manuel@gmail.com"
+              ><img src="./images/gmail-icon.png" class="contact-icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
