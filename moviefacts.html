@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Playpen+Sans:wght@100..800&family=Poetsen+One&display=swap" rel="stylesheet">
+        <script src="script.js" async></script>
+        <title>Manuel Weiher - Portfolio</title>
+    </head>
+
+  <body>
+      <header>
+        <nav class="navigation-container flex">
+          <h2 id="name">Manuel Weiher</h2>
+            <ul class="navigation">
+              <li><a href="./index.html#about-me">About Me</a></li>
+              <li><a href="./index.html#programming-projects">Programming Projects</a></li>
+              <li><a href="./index.html#audio-projects">Audio Projects</a></li>
+              <li><a href="./index.html#skills">Skills</a></li>
+              <li><a href="./index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+     <main>
+        <section id="wasteless-description>">
+          <h1>Movie Facts Website</h1>
+          <h3>Description</h3>
+          <p class="text">
+              A website where a user can find movie data and trivia and use it in a playful way.
+              <br><br>
+              <span>The 5 different categories:</span>
+              <br><br>
+              <span>Find Mutual Movies:</span>
+              <br><br>
+              Lets a user search for two persons, that could be actor/actresses, directors, composers or cinematographers. If existing it shows the movies where those two people worked together.
+              <br><br>
+              <span>Find Data Lists:</span>
+              <br><br>
+              A user can search for an actors/actress', directors, composers or cinamtographers filmohraphy. The result is a table with all the movies and data like budget, runtime and rating.
+              It also shows calculated data like average revenue, total runtime and average rating, which can be added to lists, that are automatically ranked.
+              <br><br>
+              <span>Find People Trivia:</span>
+              <br><br>
+              Search for an actor/actress, director, composer or cinematographer to get a diagram representing all the genres their movies have and all the film studios that produced their movies.
+              The diagram is clickable, showing all the movies corresponding to the clicked genre or film studio.
+              <br><br>
+              <span>Find Movies:</span>
+              <br><br>
+              A user can search for a movie and get the movie results with data like budget, revenue and rating. Eaach movie could be added to a ranking list at the bottom of the page.
+              <br><br>
+              <span>Character Guessing Game:</span>
+              <br><br>
+              A user can play the game with an actor or actress of their choice. After the search the characters are listed on the left side and the movies on the right side. 
+              The characters could be placed under the movies via drag and drop. After the submitting the choices with the "Get Score" button the user gets a score revealing with red and green
+              colour which characters where guessed right.
+              <br><br>
+              <span>Languages used:</span>
+              <br><br>
+              React/Redux, Javascript, CSS, HTML
+              <br><br>
+              <span>API used:</span>
+              <br><br>
+              TMDB
+          </p>
+        </section>
+        <section id="wasteless-images">
+          <h3>Images</h3>
+            <div class="project-images flex">
+              <img src="./images/MovieFactsSite.jpg" class="website-image" alt="website-example-picture"/>
+              <img src="./images/MovieFactsSite_02.jpg" class="website-image" alt="website-example-picture"/>
+              <img src="./images/MovieFactsSite_03.jpg" class="website-image" alt="website-example-picture"/>
+              <img src="./images/MovieFactsSite_04.jpg" class="website-image" alt="website-example-picture"/>
+              <img src="./images/MovieFactsSite_05.jpg" class="website-image" alt="website-example-picture"/>
+              <img src="./images/MovieFactsSite_06.jpg" class="website-image" alt="website-example-picture"/>
+              <img src="./images/MovieFactsSite_07.jpg" class="website-image" alt="website-example-picture"/>
+            </div>
+          </section>
+        <section id="moviefacts-video">
+          <h3>Video</h3>
+            <video controls class="website-video">
+              <source src="./videos/MovieFactsSiteVideo.mp4" type="video/mp4" />
+            </video>
+        </section>
+    </main>
+
+    <footer id="contact">
+      <div class="contact-container flex">
+        <p id="copyright">&copy; 2024 Manuel Weiher</p>
+        <div class="contact-information">
+          <h4>Contact:</h4>
+          <div class="contact-icon-container">
+            <a href="https://www.linkedin.com/in/manuel-weiher-2883b815a/"
+              ><img src="./images/linked-in-icon.png" class="contact-icon"
+            /></a>
+            <a href="https://github.com/littlethoughts4everyone"
+              ><img src="./images/github-icon.png" class="contact-icon"
+            /></a>
+            <a href="mailto:weiher.manuel@gmail.com"
+              ><img src="./images/gmail-icon.png" class="contact-icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
